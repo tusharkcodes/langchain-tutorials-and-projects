@@ -1,1 +1,3 @@
-print("Hello")
+import langchain
+
+print(langchain.__version__)
