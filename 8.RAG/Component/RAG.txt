@@ -1,0 +1,35 @@
+RAG is a technique that combines information retrival with language genearation
+where the model retrives relevant documents from knowladge base and then use
+them as context to generate accurate and grounded response 
+
+
+Benefits of RAG
+privacy to use
+up to date
+no limit  document size
+
+RAG Components
+1. Document Loaders
+2. Text Splitters
+3. Vector Database
+4. Retriverse
+
+
+Documents loaders : are componets in langchain used to load data from various sources into a
+standardized format (usually a document ibject), which can be used for chunking, embedding, retrival, and genearation
+
+Document(
+    page_content='The actual content is here'
+    metadata={"source": "filename.pdf",......}
+)
+
+
+TextLoader : TextLoader is a simple and combines used to loader in langchain that reads plain text files and
+converts them iinto Langchain Document objects.
+
+
+
+PyPDFLoader : PyPDFLoader is a document loader is Langachain used to load content from PDF files and convert each page into a Document object.
+
+
+Directory Loader : A directory loader helps to the load multiple documents from a particular directory.
